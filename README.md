@@ -32,9 +32,6 @@ Fork it, and make a pull request.
 To run tests, run the following command:
 - npm start
 
-## Sources
-- Starter Code: [Reactfolio V1.2](https://github.com/truethari/reactfolio/tree/master)
-
 ## ✋ Questions
 If you have any questions about the repo, open an issue or contact me directly at wasif.96@gmail.com. <br />
 You can find more of my work on GitHub: [mahmoo30](https://github.com/mahmoo30)
