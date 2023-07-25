@@ -29,6 +29,27 @@ const Contact = () => {
         setEmail("");
         setMessage("");
     }
+
+    return  (
+        <div className="contact">
+            <h1>Contact</h1>
+            <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" name="name" value={name} onChange={handleNameChange} />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="email">Email:</label>
+                    <input type="email" name="email" value={email} onChange={handleEmailChange} />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="message">Message:</label>
+                    <textarea name="message" value={message} onChange={handleMessageChange} />
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    );
 };
 
 export default Contact;
