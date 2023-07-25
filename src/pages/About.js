@@ -6,7 +6,7 @@ const About = () => {
         <div className="about">
         <center>
             <h1>About Me</h1>
-            <img src="https://i.imgur.com/8X3Q1ZT.png" alt="Wasif" />
+            <img src="homepage.jpg" alt="Wasif" />
             <p>
                 Hi there! My name is Wasif Mahmood, I am originally from Bangladesh but I now live in St. Louis, MO.
             </p>

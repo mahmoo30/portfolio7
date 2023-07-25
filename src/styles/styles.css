@@ -26,7 +26,6 @@
 /* HEADER */
 .header {
   background-color: var(--primary-color);
-  height: 200px;
   display: block;
   color: var(--tertiary-color)
 } */
@@ -90,6 +89,19 @@ h1 {
     padding: 20px;
     color: var(--quaternary-color);
     height: 100vh;
+  }
+
+  .about img {
+    width: 400px;
+    height: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--quaternary-color);
   }
 
   /* FOOTER */
