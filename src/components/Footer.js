@@ -3,7 +3,7 @@ import "../styles/styles.css";
 
 const Footer = () => {
     return  (
-        <footer className="footer">
+        <footer className="footer enclose problem">
             <div className="footer-container">
                 <div className="footer-item">
                     <a href="/">Github</a>

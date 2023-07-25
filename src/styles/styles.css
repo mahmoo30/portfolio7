@@ -1,0 +1,223 @@
+:root {
+	/* ------- colors ------- */
+	--primary-color: #27272a;
+	--secondary-color: #65656d;
+	--tertiary-color: #acacb4;
+	--quaternary-color: #e4e4e7;
+	--link-color: #14b8a6;
+
+    --LightPurple: #9B76E3;
+    --MediumPurple: #6F41C2;
+    --DarkPurple: #46237A;
+    --SpringGreen: #26FFA0;
+    --Eucalyptus:  #3DDC97;
+	/* ---------------------- */
+
+	/* ------- fonts ------- */
+	--primary-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	--secondary-font: "Roboto", sans-serif;
+	/* --------------------- */
+}
+
+* {
+	font-family: var(--primary-font);
+}
+
+/* HEADER */
+.header {
+  background-color: var(--primary-color);
+  height: 200px;
+  display: block;
+  color: var(--tertiary-color)
+} */
+
+.header img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-right: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 25px;
+    text-align: center;
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    align-items: right;
+  }
+
+  /* NAVBAR */
+  .nav-tabs {
+    background: var(--secondary-color);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --bs-nav-tabs-border-color: var(--secondary-color) !important;
+    list-style: none;
+    justify-content: space-around;
+
+  }
+  ul.nav.nav-tabs a.nav-link.active {
+    background: var(--primary-color);
+    border-color: black;
+  }
+  
+  .nav-tabs a {
+    color: var(--quaternary-color);
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 3px;
+    line-height: 2;
+    justify-content: space-between;
+  }
+  
+  /* SECTION */
+  .section {
+    background: var(--tertiary-color);
+    padding: 20px;  
+  }
+  
+  .section h2 {
+    text-align: center;
+    color: var(--primary-color);
+  }
+
+  .about {
+    background: var(--primary-color);
+    padding: 20px;
+    color: var(--quaternary-color);
+    height: 100vh;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: var(--secondary-color);
+    margin: 0 auto;
+    display: flex-nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    list-style: none;
+    justify-content: space-around;
+  }
+  .problem {
+    text-align:center
+  }
+  .enclose {
+    position:fixed;bottom:0px;width:100%;
+  }
+  
+  .social-icons {
+    align-content: center;
+  }
+
+  /* PROJECTS */
+  .projects{
+    height: 170vh;
+  }
+
+  .project-card-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .project-title {
+    color: var(--DarkPurple);
+    border-radius: 10px;
+    background-color: var(--SpringGreen);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .project-card {
+    background-color: var(--Eucalyptus) !important;
+    border-radius: 10px;
+    color: var(--Eucalyptus);
+    margin: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+  }
+
+  .project-img { 
+    border-radius: 10px;
+  }
+
+  .project-img:hover {
+    opacity: 0.5;
+  }
+
+  .project-img:active {
+    border: #46237A 2px solid;
+  }
+  /* PAGES */
+  .page-div {
+    background-color: var(--MediumPurple);
+    border-radius: 10px;
+    color: var(--Eucalyptus)
+  }
+
+  /* BACKGROUND HTML PAGE */
+  body.custom-body {
+    background-color: var(--SpringGreen) !important;
+  }
+
+/* Resume */
+.download-link {
+  color: var(--Eucalyptus);
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+.download-link:hover {
+  color: var(--DarkPurple);
+  text-decoration: none;
+}
+
+@media (max-width: 1270px) {
+	.page-content:before,
+	.page-content:after {
+		width: calc((100% - 90%) / 2);
+	}
+
+	.content-wrapper {
+		max-width: 90%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.page-content:before,
+	.page-content:after {
+		width: calc((100% - 950px) / 2);
+	}
+
+	.content-wrapper {
+		max-width: 980px;
+	}
+}
+
+@media (max-width: 800px) {
+	.content-wrapper {
+		max-width: 90%;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	.page-content:before,
+	.page-content:after {
+		display: none;
+	}
+
+	.title {
+		width: 100%;
+	}
+
+	.subtitle {
+		width: 100%;
+	}
+}
