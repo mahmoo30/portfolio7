@@ -1,5 +1,6 @@
 import React from "react"; // import React
 import "../styles/styles.css"; // import styles
+import { useState } from "react"; // import useState hook
 
 const Contact = () => {
     // declare state variables
