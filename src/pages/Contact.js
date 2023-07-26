@@ -32,24 +32,39 @@ const Contact = () => {
     }
 
     return  (
+        <center>
         <div className="contact">
             <h1>Contact</h1>
-            <form onSubmit={handleSubmit}>
+
+            <div className="contact-container">
+						<div className="title contact-title">
+							<h3> Let's Get in Touch: &nbsp; Ways to Connect with Me </h3>
+						</div>
+						<div className="contact-message">
+							Thank you for your interest in getting in touch with
+							me. I welcome your feedback, questions, and
+							suggestions. If you have a specific question or
+							comment, please feel free to leave me a message by filling out the form below.
+						</div>
+					</div>
+
+            <form className="contact-message" onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="name">Name:</label>
+                    <label htmlFor="name">Name: &nbsp; </label>
                     <input type="text" name="name" value={name} onChange={handleNameChange} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="email">Email:</label>
+                    <label htmlFor="email">Email: &nbsp; </label>
                     <input type="email" name="email" value={email} onChange={handleEmailChange} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="message">Message:</label>
+                    <label htmlFor="message">Message: &nbsp; </label>
                     <textarea name="message" value={message} onChange={handleMessageChange} />
                 </div>
                 <button type="submit">Submit</button>
             </form>
         </div>
+        </center>
     );
 };
 

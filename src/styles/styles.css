@@ -27,8 +27,8 @@
 .header {
   background-color: var(--primary-color);
   display: block;
-  color: var(--tertiary-color)
-} */
+  color: var(--tertiary-color);
+} 
 
 .header img {
   width: 180px;
@@ -38,11 +38,15 @@
   margin-right: 20px;
 }
 
+.header h1 {
+  color: var(--quaternary-color);
+}
+
 h1 {
     margin: 0;
     padding-top: 25px;
     text-align: center;
-    color: var(--tertiary-color);
+    color: var(--primary-color);
     font-size: 3rem;
     align-items: right;
   }
@@ -77,6 +81,7 @@ h1 {
   .section {
     background: var(--tertiary-color);
     padding: 20px;  
+    overflow-y: auto;
   }
   
   .section h2 {
@@ -85,10 +90,13 @@ h1 {
   }
 
   .about {
-    background: var(--primary-color);
+    background: var(--quaternary-color);
     padding: 20px;
-    color: var(--quaternary-color);
+    color: var(--primary-color);
     height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   .about img {
@@ -101,7 +109,7 @@ h1 {
   .about p {
     font-size: 1.5rem;
     text-align: center;
-    color: var(--quaternary-color);
+    color: var(--primary-color);
   }
 
   /* FOOTER */
@@ -129,6 +137,12 @@ h1 {
   /* PROJECTS */
   .projects{
     height: 170vh;
+    margin-bottom: 170px;
+    padding-bottom: 170px;
+  }
+
+  .projects-container {
+    margin-bottom: 50px;
   }
 
   .project-card-container {
@@ -178,6 +192,21 @@ h1 {
   }
 
 /* Resume */
+
+.resume {
+  max-height: max-content;
+  overflow-y: auto;
+  height: 150vh;
+}
+
+.resume-container {
+  padding-bottom: 50px;
+  padding-top: 20px;
+  border: 10px var(--black) solid;
+  max-height: fit-content;
+  overflow-y: auto;
+}
+
 .download-link {
   color: var(--Eucalyptus);
   text-decoration: none;
@@ -187,6 +216,14 @@ h1 {
 .download-link:hover {
   color: var(--DarkPurple);
   text-decoration: none;
+}
+
+.contact-message {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1270px) {
