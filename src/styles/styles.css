@@ -130,13 +130,23 @@ h1 {
 
   /* PROJECTS */
   .projects{
-    height: 170vh;
-    margin-bottom: 170px;
-    padding-bottom: 170px;
+    height: 180vh;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    overflow-y: auto;
+    max-width: 100%;
+  }
+
+  .project p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+    max-width: 80%;
   }
 
   .projects-container {
     margin-bottom: 50px;
+    overflow-y: auto;
   }
 
   .project-card-container {
